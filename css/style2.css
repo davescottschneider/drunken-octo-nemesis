@@ -1,0 +1,273 @@
+/* You are viewing the cascading style sheet for davescottschneider.com 
+developed by Dave Scott Schneider. To hire Dave call him at (734)755-8132. 
+It is the right decision. Just do it. Like right now. I'm sure he'll answer...
+
+Key:
+1. Basic body stylings
+2. Buttons and colors and shit
+3. Section IDs
+4. Media queries
+ 4.1 max-width: 680px
+ 4.2 max-width: 1024px
+
+*/
+
+/* 1. Basic Body stylings */
+body {
+	background: #fff;
+	color: #2a2a2a;
+	font-family: 'Nunito', sans-serif;
+}
+img {
+	margin-bottom:10px;
+	max-width:100%;
+}
+a {
+	color: #453a7f;
+	text-decoration: none;
+}
+h1 {
+	color:#fff;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: -1.5px;
+	line-height:1.25em;
+	padding:0.5em;
+	text-align: left;
+	position:absolute;	
+}
+h2 {
+	color: #fff;
+	font-size: 2em;
+	font-weight: 300;
+	padding-top:2em;
+}
+h3 {
+	color: #2a2a2a;
+	font-size: 2em;
+	font-weight: 200;
+	padding:0.25em;
+	padding-top:1.5em;
+}
+.h4{
+	color: #2a2a2a;
+	font-size: 2em;
+	font-weight: 100;
+	padding:0.5em;
+	padding-top:2em;
+}
+.h5{
+	color:#2a2a2a;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: -1.5px;
+}
+p{
+	color:#b7b7b7;
+	font-weight: 100;
+	letter-spacing:.45px;
+	line-height:1.5em;
+	padding-top:0.5em;
+
+}
+.well {
+	background:transparent;
+	padding-bottom:25px;
+}	
+.center{
+	margin:0 auto;
+	text-align:center;
+}
+.center ul{
+	margin:0 auto;
+}
+.alignright{
+	float:right;
+}
+.alignleft{
+	float:left;
+}
+.block{
+	display:block;
+}
+.paddingone{
+	padding:.2em 0 1em 0;
+}
+#logo{
+	display:block;
+	float:left;
+	margin: 10px 0;
+	width:290px;
+}
+/* 2. Buttons and colors and shit. */
+.btn {
+	background: #c7c7c7;
+	border-radius: 15px;
+	color: #fff;
+	margin: 20px 10px;
+	padding: 10px 10px;
+	text-align:center;
+	text-transform: uppercase;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+btn:hover {
+	background-color: #dadada;
+}
+.btn-small {
+	background: #b22316 url('texture.png') no-repeat right bottom;
+	border-radius: 25px;
+	color: #faf3bc;
+	font-size: .75em;
+	margin: 50px 0;
+	padding: 10px 25px;
+	text-transform: uppercase;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+}
+.btn-small:hover {
+	
+	background-color: #c62718;
+}
+.submit-btn {
+	background: #b22316 url('texture.png') no-repeat right top;
+	border: 0;
+	border-radius: 25px;
+	color: #faf3bc;
+	font-family: 'Nunito', sans-serif;
+	font-size: .75em;
+	font-weight: 100;
+	margin: 20px 0 50px 0;
+	padding: 10px 25px;
+	text-transform: uppercase;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+}
+.teal{color: #28768b;}
+.red{color: #ff252e;}
+.violet{color: #453a7f;}
+.white{color:#ffffff;}
+.black{color:#000000;}
+
+/* 3. Section IDs */
+#contact span{
+	color: #b22316;
+	font-weight: 600;
+}
+#copyright {
+	border-top: 8px solid #2a0400;
+	margin: 15px 0;
+	padding: 10px 0;
+	text-align: center;
+}
+.stickytop{
+	background-color:#d3d3d3;
+    height:120px;
+    opacity:0.7;
+	top:0;
+	position:fixed;
+	width:100%;
+}
+.nav{
+	margin:0 auto;
+    color: #838383;
+    font: 800 .9em/31px "proxima-nova",sans-serif;
+    font-size:;
+    letter-spacing: 0.4em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.site_tools{
+	color:453a7f;
+    margin: 0;
+    padding: 0;
+    display:block;
+	float:right;
+}
+.site_tools ul{
+	list-style: none;
+		vertical-align:middle;
+}
+.site_tools ul li{
+	float:left;
+	margin:1.5em 1.5em 0 0;
+}
+#headline{
+	display:block;
+	float:left;
+	font-size:1.5em;
+	margin-bottom:9em;
+}
+#features{
+	background-color:#fff;
+	display:block;
+	margin:0 auto;
+	max-width:1000px;
+	padding-top:2em;
+}
+#features p{
+	margin-bottom:8.5em;
+}
+#footer{
+}        
+
+/* 4.0 media queries */
+
+/* 4.1 max-width: 680px */
+@media screen and (max-width: 680px){
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {width:100%;
+	}
+	.grid_4,
+	.grid_5{width:90%;
+	}
+	body{padding:0;left:0;right:0;}
+	.container{
+	width:100%;
+	padding:0;left:0;right:0;
+	}
+	.alignright{
+	float:none;
+	}
+	.btn{
+		margin:10px auto;
+		display:block;
+		width:75%;
+		float:none;
+	}
+	.center{
+		margin:none;
+	}
+	img{
+		max-width:90%;
+		padding:0;
+		margin:0 auto;
+	}
+	p{padding:0.5em;}
+	h3{text-align:center;padding:0.5em;}
+	#clouds, #mgclouds{
+		background-image:none;
+		background:transparent;
+	}
+	#skydive{
+		background:#6ebaed;
+		background-image: url('img/mskydive.png') repeat fixed;
+	}
+	#logo{
+	}
+	#features p{
+		margin:0;
+	}
+}
+/* 4.2 max-width: 1024 */
+@media screen and (max-width: 1024px) {
+	
+}

@@ -1,0 +1,421 @@
+/* You are viewing the cascading style sheet for davescottschneider.com 
+developed by Dave Scott Schneider. To hire Dave call him at (734)755-8132. 
+It is the right decision. Just do it. Like right now. I'm sure he'll answer...
+
+Key:
+1. Basic body stylings
+2. Buttons and colors and shit
+3. Section IDs
+ 3.1 Those other company rollovers
+4. Media queries
+ 4.1 max-width: 680px
+ 4.2 max-width: 1024px
+
+*/
+
+/* 1. Basic Body stylings */
+body {
+	background: #fff;
+	color: #2a2a2a;
+	font-family: 'Nunito', sans-serif;
+}
+img {
+	margin-bottom:10px;
+	max-width:100%;
+	padding:2% 0;
+}
+a {
+	color: #453a7f;
+	text-decoration: none;
+}
+h1 {
+	color:#fff;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: -1.5px;
+	line-height:1.25em;
+	padding:0.5em;
+	text-align: left;
+	position:absolute;	
+}
+h2 {
+	color: #fff;
+	font-size: 2em;
+	font-weight: 300;
+	padding-top:2em;
+}
+h3 {
+	color: #2a2a2a;
+	font-size: 2em;
+	font-weight: 200;
+	padding:0.25em;
+	padding-top:1.5em;
+}
+.h4{
+	color: #2a2a2a;
+	font-size: 2em;
+	font-weight: 100;
+	padding:0.5em;
+	padding-top:2em;
+}
+.h5{
+	color:#2a2a2a;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: -1.5px;
+}
+p{
+	color:#b7b7b7;
+	font-weight: 100;
+	letter-spacing:.45px;
+	line-height:1.5em;
+	padding-top:0.5em;
+
+}
+.well {
+	background:transparent;
+	padding-bottom:25px;
+}	
+.center{
+	margin:0 auto;
+	text-align:center;
+}
+.center ul{
+	margin:0 auto;
+}
+.alignright{
+	float:right;
+}
+.alignleft{
+	float:left;
+}
+.block{
+	display:block;
+}
+.paddingone{
+	padding:.2em 0 1em 0;
+}
+/* 2. Buttons and colors and shit. */
+.btn {
+	background: #c7c7c7;
+	border-radius: 15px;
+	color: #fff;
+	margin: 20px 10px;
+	padding: 10px 10px;
+	text-align:center;
+	text-transform: uppercase;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+btn:hover {
+	background-color: #dadada;
+}
+.btn-small {
+	background: #b22316 url('texture.png') no-repeat right bottom;
+	border-radius: 25px;
+	color: #faf3bc;
+	font-size: .75em;
+	margin: 50px 0;
+	padding: 10px 25px;
+	text-transform: uppercase;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+}
+.btn-small:hover {
+	
+	background-color: #c62718;
+}
+.submit-btn {
+	background: #b22316 url('texture.png') no-repeat right top;
+	border: 0;
+	border-radius: 25px;
+	color: #faf3bc;
+	font-family: 'Nunito', sans-serif;
+	font-size: .75em;
+	font-weight: 100;
+	margin: 20px 0 50px 0;
+	padding: 10px 25px;
+	text-transform: uppercase;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+}
+.teal{color: #28768b;}
+.red{color: #ff252e;}
+.violet{color: #453a7f;}
+.white{color:#ffffff;}
+.black{color:#000000;}
+
+/* 3. Section IDs */
+#contact span{
+	color: #b22316;
+	font-weight: 600;
+}
+#copyright {
+	border-top: 8px solid #2a0400;
+	margin: 15px 0;
+	padding: 10px 0;
+	text-align: center;
+}
+#logo{
+	margin-bottom:6em;
+	width:290px;
+}
+#site_tools{
+	color:453a7f;
+	display:block;
+	float:right;
+}
+#site_tools ul{
+	list-style: none;
+}
+#site_tools ul li{
+	float:left;
+	margin:1.5em 1.5em 0 0;
+}
+.slicknav_menu {
+	display:none;
+}
+#clouds{
+	background: url('img/clouds.jpg') 50% 0 repeat-x fixed;
+	background-color:#6ebaed;
+    background-size: cover;
+    max-height:900px;
+    min-height:900px;
+    width:100%; 
+}
+#mgclouds{
+	background: url('img/mgclouds.png') 50% 0 repeat-x fixed;
+	background-color:transparent;
+    background-size: cover;
+    max-height:900px;
+    min-height:900px;
+    height:25%;
+    width:100%;
+}
+#skydive{
+	background: url('img/skydive.png') 50% 0 no-repeat fixed;
+	background-color:transparent;
+    background-size: cover;
+    max-height:900px;
+    min-height:900px;
+    height:25%;
+    width:100%; 
+}
+#headline{
+	display:block;
+	float:left;
+	font-size:1.5em;
+	margin-bottom:9em;
+}
+#features{
+	background-color:#fff;
+	display:block;
+	margin:0 auto;
+	max-width:1000px;
+	padding-top:2em;
+}
+#features p{
+	margin-bottom:8.5em;
+}
+#mountains{
+	background: url('img/night.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+	height:25%;
+	width: 100%;
+}
+.mtn{
+	margin-bottom:12em;
+}
+#relocate{
+	margin:0 auto;
+	max-width:1000px;
+	padding:6em 0;
+}
+#testimonials{
+	margin:0 auto;
+	position:relative;
+}
+#bio{
+	background:url('img/seamlessbg.png') repeat right top;
+	
+}
+#footer{
+}
+
+/* 3.1 Those other company logo rollovers */
+#otherlogos{
+	list-style:none;
+	margin:0 auto;
+}
+#otherlogos li{
+	display:block;
+}
+#otherlogos img{
+	max-width:200px;
+}
+.fu{
+	background:transparent url('img/fureg.png') center top no-repeat;
+	display:block;
+	height:100%;
+	min-width:75px;
+	max-width: 200px;
+	width:100%;
+ }
+.fu:hover{
+	background-image: url('img/fuover.png');
+}
+.cs{
+ 	background:transparent url('img/corereg.png') center top no-repeat;
+	display:block;
+ 	height:133px;
+	width: 200px;
+ }
+.cs:hover{
+	background-image: url('img/coreover.png');
+}
+.fw{
+	background:transparent url('img/fwgreg.png') center top no-repeat;
+	display:block;
+	height:133px;
+	width: 200px;
+ }
+.fw:hover{
+	background-image: url('img/fwgover.png');
+}
+.quote-text:before, .quote-text:after, .quote-text-up:before, .quote-text-up:after {
+    content: "";
+    display: block;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+}
+
+#quotes{
+	margin:3em auto;
+}
+#quotes img{
+	padding-left:1.25em;
+}
+.quote-text:before {
+    border-width: 14px;
+    border-style: solid;
+    border-right: 14px solid transparent;
+    border-color: rgb(246, 249, 250) transparent transparent;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    z-index: 3;
+    top: auto;
+    right: auto;
+    bottom: -28px;
+    left: 30px;
+}
+.quote-text:after {
+    border-style: solid;
+    border-right: 18px solid transparent;
+    border-color: rgb(220, 232, 237) transparent transparent;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    z-index: 2;
+    border-width: 18px;
+    top: auto;
+    right: auto;
+    bottom: -36px;
+    left: 26px;
+}
+.quote-text{
+	background-color: rgb(246, 249, 250);
+	border-left: medium none;
+	color: rgba(85, 94, 106, 0.8);
+	font-size: 16px;
+	font-style: italic;
+	line-height: 1.6;
+	margin: 0px 0px 30px;
+	padding: 26px;
+	position:relative;
+	border-radius: 5px;
+	box-shadow: 0px 3px 0px rgb(220, 232, 237);
+}
+.quote-author{
+	line-height:0;
+	padding:1em;
+}
+.banner { position: relative; overflow: auto;}
+.banner li { list-style: none;}
+.banner ul li { float: left; box-sizing:border-box;padding:50px; width:100%; }
+        
+
+/* 4.0 media queries */
+
+/* 4.1 max-width: 680px */
+@media screen and (max-width: 680px){
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {width:100%;
+	}
+	.grid_4,
+	.grid_5{width:90%;
+	}
+	body{padding:0;left:0;right:0;}
+	.container{
+	width:100%;
+	padding:0;left:0;right:0;
+	}
+	.alignright{
+	float:none;
+	}
+	.btn{
+		margin:10px auto;
+		display:block;
+		width:75%;
+		float:none;
+	}
+	#menu {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+	.center{
+		margin:none;
+	}
+	img{
+		max-width:90%;
+		padding:0;
+		margin:0 auto;
+	}
+	p{padding:0.5em;}
+	h3{text-align:center;padding:0.5em;}
+	#skydive, #mgclouds{
+		background-image:none;
+		background:transparent;
+	}
+	#clouds{
+		background:#6ebaed;
+		background-image: url('img/mskydive.png') repeat fixed;
+	}
+	#logo{
+		margin:1em auto 6em;
+	}
+	#features p{
+		margin:0;
+	}
+}
+/* 4.2 max-width: 1024 */
+@media screen and (max-width: 1024px) {
+	
+}

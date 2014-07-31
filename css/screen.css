@@ -1,0 +1,831 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../Users/daveschneider/.rvm/gems/ruby-2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Users/daveschneider/.rvm/gems/ruby-2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Users/daveschneider/.rvm/gems/ruby-2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Users/daveschneider/.rvm/gems/ruby-2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Users/daveschneider/.rvm/gems/ruby-2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Users/daveschneider/.rvm/gems/ruby-2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Users/daveschneider/.rvm/gems/ruby-2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Users/daveschneider/.rvm/gems/ruby-2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Users/daveschneider/.rvm/gems/ruby-2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_colors.scss */
+.teal {
+  color: #28768b;
+}
+
+/* line 2, ../sass/_colors.scss */
+.red {
+  color: #ff252e;
+}
+
+/* line 3, ../sass/_colors.scss */
+.violet {
+  color: #453a7f;
+}
+
+/* line 4, ../sass/_colors.scss */
+.white {
+  color: #ffffff;
+}
+
+/* line 5, ../sass/_colors.scss */
+.black {
+  color: #000000;
+}
+
+/* You are viewing the cascading style sheet for davescottschneider.com 
+developed by Dave Scott Schneider. To hire Dave call him at (734)755-8132. 
+It is the right decision. Just do it. Like right now. I'm sure he'll answer...
+
+Key:
+1. Basic body stylings
+2. Buttons and colors and shit
+3. Section IDs
+ 3.1 Those other company rollovers
+4. Media queries
+ 4.1 max-width: 680px
+ 4.2 max-width: 1024px
+
+*/
+/* 1. Basic Body stylings */
+/* line 18, ../sass/_index.scss */
+.site_tools {
+  font-family: 800 .9em/31px "proxima-nova",sans-serif;
+  color: 453a7f;
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: right;
+}
+
+/* line 26, ../sass/_index.scss */
+.site_tools ul {
+  list-style: none;
+  vertical-align: middle;
+}
+
+/* line 30, ../sass/_index.scss */
+.site_tools ul li {
+  float: left;
+  margin: 1.5em 1.5em 0 0;
+}
+
+/* line 34, ../sass/_index.scss */
+.well {
+  padding-bottom: 25px;
+}
+
+/* line 37, ../sass/_index.scss */
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 41, ../sass/_index.scss */
+.center ul {
+  margin: 0 auto;
+}
+
+/* line 44, ../sass/_index.scss */
+.alignright {
+  float: right;
+}
+
+/* line 47, ../sass/_index.scss */
+.alignleft {
+  float: left;
+}
+
+/* line 50, ../sass/_index.scss */
+.block {
+  display: block;
+}
+
+/* line 53, ../sass/_index.scss */
+.paddingone {
+  padding: .2em 0 1em 0;
+}
+
+/* 2. Buttons and colors and shit. */
+/* line 57, ../sass/_index.scss */
+btn:hover {
+  background-color: #dadada;
+}
+
+/* line 60, ../sass/_index.scss */
+.btn-small {
+  background: #b22316 url("texture.png") no-repeat right bottom;
+  border-radius: 25px;
+  color: #faf3bc;
+  font-size: .75em;
+  margin: 50px 0;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+
+/* line 71, ../sass/_index.scss */
+.btn-small:hover {
+  background-color: #c62718;
+}
+
+/* line 75, ../sass/_index.scss */
+.submit-btn {
+  background: #b22316 url("texture.png") no-repeat right top;
+  border: 0;
+  border-radius: 25px;
+  color: #faf3bc;
+  font-family: 'Nunito', sans-serif;
+  font-size: .75em;
+  font-weight: 100;
+  margin: 20px 0 50px 0;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+
+/* 3. Section IDs */
+/* line 91, ../sass/_index.scss */
+#contact span {
+  color: #b22316;
+  font-weight: 600;
+}
+
+/* line 95, ../sass/_index.scss */
+#copyright {
+  border-top: 8px solid #2a0400;
+  margin: 15px 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* line 101, ../sass/_index.scss */
+#logo {
+  margin-bottom: 6em;
+  width: 290px;
+}
+
+/* line 105, ../sass/_index.scss */
+#site_tools {
+  color: 453a7f;
+  display: block;
+  float: right;
+}
+
+/* line 110, ../sass/_index.scss */
+#site_tools ul {
+  list-style: none;
+}
+
+/* line 113, ../sass/_index.scss */
+#site_tools ul li {
+  float: left;
+  margin: 1.5em 1.5em 0 0;
+}
+
+/* line 117, ../sass/_index.scss */
+.slicknav_menu {
+  display: none;
+}
+
+/* line 120, ../sass/_index.scss */
+#clouds {
+  background: url("img/clouds.jpg") 50% 0 repeat-x fixed;
+  background-color: #6ebaed;
+  background-size: cover;
+  max-height: 900px;
+  min-height: 900px;
+  width: 100%;
+}
+
+/* line 128, ../sass/_index.scss */
+#mgclouds {
+  background: url("img/mgclouds.png") 50% 0 repeat-x fixed;
+  background-color: transparent;
+  background-size: cover;
+  max-height: 900px;
+  min-height: 900px;
+  height: 25%;
+  width: 100%;
+}
+
+/* line 137, ../sass/_index.scss */
+#skydive {
+  background: url("img/skydive.png") 50% 0 no-repeat fixed;
+  background-color: transparent;
+  background-size: cover;
+  max-height: 900px;
+  min-height: 900px;
+  height: 25%;
+  width: 100%;
+}
+
+/* line 146, ../sass/_index.scss */
+#headline {
+  display: block;
+  float: left;
+  font-size: 2em;
+  margin-bottom: 9em;
+}
+
+/* line 152, ../sass/_index.scss */
+#features {
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-top: 2em;
+}
+
+/* line 159, ../sass/_index.scss */
+#features p {
+  margin-bottom: 8.5em;
+}
+
+/* line 162, ../sass/_index.scss */
+#mountains {
+  background: url("img/night.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25%;
+  width: 100%;
+}
+
+/* line 169, ../sass/_index.scss */
+.mtn {
+  margin-bottom: 12em;
+}
+
+/* line 172, ../sass/_index.scss */
+#relocate {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 6em 0;
+}
+
+/* line 177, ../sass/_index.scss */
+#testimonials {
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 181, ../sass/_index.scss */
+#bio {
+  background: url("img/seamlessbg.png") repeat right top;
+}
+
+/* 3.1 Those other company logo rollovers */
+/* line 189, ../sass/_index.scss */
+#otherlogos {
+  list-style: none;
+  margin: 0 auto;
+}
+
+/* line 193, ../sass/_index.scss */
+#otherlogos li {
+  display: block;
+}
+
+/* line 196, ../sass/_index.scss */
+#otherlogos img {
+  max-width: 200px;
+}
+
+/* line 199, ../sass/_index.scss */
+.fu {
+  background: transparent url("img/fureg.png") center top no-repeat;
+  display: block;
+  height: 100%;
+  min-width: 75px;
+  max-width: 200px;
+  width: 100%;
+}
+
+/* line 207, ../sass/_index.scss */
+.fu:hover {
+  background-image: url("img/fuover.png");
+}
+
+/* line 210, ../sass/_index.scss */
+.cs {
+  background: transparent url("img/corereg.png") center top no-repeat;
+  display: block;
+  height: 133px;
+  width: 200px;
+}
+
+/* line 216, ../sass/_index.scss */
+.cs:hover {
+  background-image: url("img/coreover.png");
+}
+
+/* line 219, ../sass/_index.scss */
+.fw {
+  background: transparent url("img/fwgreg.png") center top no-repeat;
+  display: block;
+  height: 133px;
+  width: 200px;
+}
+
+/* line 225, ../sass/_index.scss */
+.fw:hover {
+  background-image: url("img/fwgover.png");
+}
+
+/* line 228, ../sass/_index.scss */
+.quote-text:before, .quote-text:after, .quote-text-up:before, .quote-text-up:after {
+  content: "";
+  display: block;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+}
+
+/* line 236, ../sass/_index.scss */
+#quotes {
+  margin: 3em auto;
+}
+
+/* line 239, ../sass/_index.scss */
+#quotes img {
+  padding-left: 1.25em;
+}
+
+/* line 242, ../sass/_index.scss */
+.quote-text:before {
+  border-width: 14px;
+  border-style: solid;
+  border-right: 14px solid transparent;
+  border-color: #f6f9fa transparent transparent;
+  -moz-border-top-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  border-image: none;
+  z-index: 3;
+  top: auto;
+  right: auto;
+  bottom: -28px;
+  left: 30px;
+}
+
+/* line 258, ../sass/_index.scss */
+.quote-text:after {
+  border-style: solid;
+  border-right: 18px solid transparent;
+  border-color: #dce8ed transparent transparent;
+  -moz-border-top-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  border-image: none;
+  z-index: 2;
+  border-width: 18px;
+  top: auto;
+  right: auto;
+  bottom: -36px;
+  left: 26px;
+}
+
+/* line 274, ../sass/_index.scss */
+.quote-text {
+  background-color: #f6f9fa;
+  border-left: medium none;
+  color: rgba(85, 94, 106, 0.8);
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0px 0px 30px;
+  padding: 26px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px #dce8ed;
+}
+
+/* line 287, ../sass/_index.scss */
+.quote-author {
+  line-height: 0;
+  padding: 1em;
+}
+
+/* line 291, ../sass/_index.scss */
+.banner {
+  position: relative;
+  overflow: auto;
+}
+
+/* line 292, ../sass/_index.scss */
+.banner li {
+  list-style: none;
+}
+
+/* line 293, ../sass/_index.scss */
+.banner ul li {
+  float: left;
+  box-sizing: border-box;
+  padding: 50px;
+  width: 100%;
+}
+
+/* 4.0 media queries */
+/* 4.1 max-width: 680px */
+@media screen and (max-width: 680px) {
+  /* line 309, ../sass/_index.scss */
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_6,
+  .grid_7,
+  .grid_8,
+  .grid_9,
+  .grid_10,
+  .grid_11,
+  .grid_12 {
+    width: 100%;
+  }
+
+  /* line 312, ../sass/_index.scss */
+  .grid_4,
+  .grid_5 {
+    width: 90%;
+  }
+
+  /* line 314, ../sass/_index.scss */
+  body {
+    padding: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* line 315, ../sass/_index.scss */
+  .container {
+    width: 100%;
+    padding: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* line 319, ../sass/_index.scss */
+  .alignright {
+    float: none;
+  }
+
+  /* line 322, ../sass/_index.scss */
+  .btn {
+    margin: 10px auto;
+    display: block;
+    width: 75%;
+    float: none;
+  }
+
+  /* line 328, ../sass/_index.scss */
+  #menu {
+    display: none;
+  }
+
+  /* line 332, ../sass/_index.scss */
+  .slicknav_menu {
+    display: block;
+  }
+
+  /* line 335, ../sass/_index.scss */
+  .center {
+    margin: none;
+  }
+
+  /* line 338, ../sass/_index.scss */
+  img {
+    max-width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  /* line 343, ../sass/_index.scss */
+  p {
+    padding: 0.5em;
+  }
+
+  /* line 344, ../sass/_index.scss */
+  h3 {
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  /* line 345, ../sass/_index.scss */
+  #skydive, #mgclouds {
+    background-image: none;
+    background: transparent;
+  }
+
+  /* line 349, ../sass/_index.scss */
+  #clouds {
+    background: #6ebaed;
+    background-image: url("img/mskydive.png") repeat fixed;
+  }
+
+  /* line 353, ../sass/_index.scss */
+  #logo {
+    margin: 1em auto 6em;
+  }
+
+  /* line 356, ../sass/_index.scss */
+  #features p {
+    margin: 0;
+  }
+}
+/* 4.2 max-width: 1024 */
+/* line 3, ../sass/_websites.scss */
+.websites .whitebg {
+  width: 100%;
+  background-color: #fff;
+}
+/* line 7, ../sass/_websites.scss */
+.websites .site_tools {
+  position: block;
+  font: 800 .9em/31px "proxima-nova",sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  text-align: right;
+  text-transform: uppercase;
+  float: right;
+  margin-right: 0;
+  padding-top: 0.4em;
+}
+/* line 17, ../sass/_websites.scss */
+.websites .site_tools a {
+  padding: 1.5em;
+}
+/* line 19, ../sass/_websites.scss */
+.websites .site_tools a:hover {
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #e4e4e4;
+}
+/* line 26, ../sass/_websites.scss */
+.websites #branding {
+  float: left;
+  position: block;
+  margin: 0;
+  width: 225px;
+  height: auto;
+  padding: 0.25em 0;
+}
+/* line 34, ../sass/_websites.scss */
+.websites h1, .websites h2, .websites h3 {
+  color: #28768b;
+}
+/* line 37, ../sass/_websites.scss */
+.websites h3 {
+  font-size: 20px;
+  padding-left: 0;
+}
+/* line 41, ../sass/_websites.scss */
+.websites img {
+  float: left;
+  margin-right: 1.5em;
+}
+/* line 45, ../sass/_websites.scss */
+.websites p {
+  margin: 0.5em 0;
+}
+/* line 48, ../sass/_websites.scss */
+.websites .emailsubmit {
+  margin-top: 15px;
+}
+/* line 54, ../sass/_websites.scss */
+.websites dt {
+  color: #453a7f;
+}
+/* line 58, ../sass/_websites.scss */
+.websites dd p {
+  color: #28768b;
+}
+
+/* line 64, ../sass/_websites.scss */
+.buttonContainer {
+  margin-top: 1em;
+}
+
+/* line 67, ../sass/_websites.scss */
+video {
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 80%;
+  width: auto;
+  height: auto;
+  max-height: 1200px;
+  z-index: -100;
+  background-size: cover;
+}
+
+/* line 79, ../sass/_websites.scss */
+#bgvid {
+  max-height: 1200px;
+}
+
+/* line 82, ../sass/_websites.scss */
+.overlay {
+  margin: 0 auto;
+  text-align: center;
+  padding: 5em;
+}
+/* line 86, ../sass/_websites.scss */
+.overlay p {
+  color: #fff;
+  font-size: 2em;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  margin: 0;
+}
+/* line 94, ../sass/_websites.scss */
+.overlay a {
+  width: 100%;
+  height: 100%;
+  padding-top: 2em;
+  padding-bottom: 5em;
+  color: #ff252e;
+  font-size: 24px;
+}
+/* line 101, ../sass/_websites.scss */
+.overlay a:hover {
+  text-decoration: none;
+  color: #453a7f;
+}
+
+/* line 107, ../sass/_websites.scss */
+.navbar {
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+}
+
+/* line 112, ../sass/_websites.scss */
+.sidebar {
+  float: right;
+  margin-top: 4em;
+}
+/* line 115, ../sass/_websites.scss */
+.sidebar ul {
+  margin-bottom: 2em;
+}
+
+/* line 119, ../sass/_websites.scss */
+.phone {
+  padding-left: 0.25em;
+  color: #ff252e;
+  font-size: 28px;
+}
+
+/* line 125, ../sass/_websites.scss */
+#problem ul {
+  padding: 1.5em;
+  color: #ff252e;
+  list-style-type: square;
+}
+/* line 129, ../sass/_websites.scss */
+#problem ul li {
+  padding: 0.25em;
+}
+/* line 131, ../sass/_websites.scss */
+#problem ul li span {
+  color: #28768b;
+}
+
+/* line 11, ../sass/screen.scss */
+body {
+  background: #fff;
+  color: #2a2a2a;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* line 16, ../sass/screen.scss */
+img {
+  margin-bottom: 10px;
+  max-width: 100%;
+  padding: 2% 0;
+}
+
+/* line 21, ../sass/screen.scss */
+a {
+  color: #453a7f;
+  text-decoration: none;
+}
+
+/* line 25, ../sass/screen.scss */
+h1 {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: -1.5px;
+  line-height: 1.25em;
+  padding: 0.5em;
+  text-align: left;
+  position: absolute;
+}
+
+/* line 35, ../sass/screen.scss */
+h2 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 300;
+  padding-top: 2em;
+}
+
+/* line 41, ../sass/screen.scss */
+h3 {
+  color: #2a2a2a;
+  font-size: 2em;
+  font-weight: 200;
+  padding: 0.25em;
+  padding-top: 1.5em;
+}
+
+/* line 48, ../sass/screen.scss */
+h4 {
+  color: #2a2a2a;
+  font-size: 2em;
+  font-weight: 100;
+  padding: 0.5em;
+  padding-top: 2em;
+}
+
+/* line 55, ../sass/screen.scss */
+h5 {
+  color: #2a2a2a;
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: -1.5px;
+}
+
+/* line 61, ../sass/screen.scss */
+p {
+  color: #b7b7b7;
+  font-weight: 100;
+  letter-spacing: .45px;
+  line-height: 1.5em;
+  padding-top: 0.5em;
+}

@@ -1,0 +1,136 @@
+.websites{
+
+	.whitebg{
+		width:100%;
+		background-color:#fff;
+	}
+		.site_tools{
+		position:block;
+		font: 800 .9em/31px "proxima-nova",sans-serif;
+	    font-size:14px;
+	    letter-spacing: 0.3em;
+	    text-align: right;
+	    text-transform: uppercase;
+	    float:right;
+	    margin-right:0;
+	    padding-top:0.4em;
+	    a{
+	    	padding:1.5em;
+	    	&:hover{
+	    		text-decoration:none;
+	    		border-radius: 5px;
+	    		background-color:$lightgray;
+	    	}
+	    }
+	}
+	#branding{
+		float:left;
+		position:block;
+		margin:0;
+		width:225px;
+		height:auto;
+		padding:0.25em 0;
+	}
+	h1,h2,h3{
+		color:$teal;
+	}
+	h3{
+		font-size:20px;
+		padding-left:0;
+	}
+	img{
+		float:left;
+		margin-right:1.5em;
+	}
+	p{
+		margin:0.5em 0;
+	}
+	.emailsubmit{
+		margin-top:15px;
+	}
+	dl{
+
+	}
+	dt{
+		color:$violet;
+	}
+	dd{
+		p{
+		color:$teal;
+		}
+	}
+
+}
+.buttonContainer{
+	margin-top: 1em;
+}
+video {
+	position:absolute;
+	right: 0;
+	top: 0;
+	min-width: 100%;
+	min-height:80%;
+	width: auto;
+	height:auto;
+	max-height:1200px;
+	z-index: -100;
+	background-size: cover;
+}
+#bgvid{
+	max-height:1200px;
+}
+.overlay {
+	margin:0 auto;
+  	text-align: center;
+  	padding:5em;
+  	p{	
+  		color:#fff;
+  		font-size: 2em;
+  		padding-top:10%;
+  		padding-bottom:10%;
+  		text-align:center;
+  		margin:0;
+  	}
+  	a{
+  		width: 100%;
+  		height: 100%;
+  		padding-top: 2em;
+  		padding-bottom: 5em;
+  		color:$red;
+  		font-size:24px;
+	  	&:hover{
+	  			text-decoration: none;
+	  			color:$violet;
+	  	}
+  	}
+}
+.navbar{
+		width:100%;
+		top:0;
+		background-color:#fff;
+	}
+.sidebar{
+	float:right;
+	margin-top:4em;
+	ul{
+		margin-bottom:2em;
+	}
+}
+.phone{
+	padding-left:0.25em;
+	color:$red;
+	font-size:28px;
+}
+#problem{
+	ul{
+		padding:1.5em;
+		color:$red;
+		list-style-type:square;
+		li{
+			padding:0.25em;
+			span{
+				color:$teal;
+			}
+		}
+	}
+}

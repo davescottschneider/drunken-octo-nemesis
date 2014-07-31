@@ -1,0 +1,68 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "_colors.scss";
+@import "_index.scss";
+@import "_websites.scss";
+
+body {
+	background: #fff;
+	color: #2a2a2a;
+	font-family: 'Nunito', sans-serif;
+}
+img {
+	margin-bottom:10px;
+	max-width:100%;
+	padding:2% 0;
+}
+a {
+	color: #453a7f;
+	text-decoration: none;
+}
+h1 {
+	color:#fff;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: -1.5px;
+	line-height:1.25em;
+	padding:0.5em;
+	text-align: left;
+	position:absolute;	
+}
+h2 {
+	color: #fff;
+	font-size: 2em;
+	font-weight: 300;
+	padding-top:2em;
+}
+h3 {
+	color: #2a2a2a;
+	font-size: 2em;
+	font-weight: 200;
+	padding:0.25em;
+	padding-top:1.5em;
+}
+h4{
+	color: #2a2a2a;
+	font-size: 2em;
+	font-weight: 100;
+	padding:0.5em;
+	padding-top:2em;
+}
+h5{
+	color:#2a2a2a;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: -1.5px;
+}
+p{
+	color:#b7b7b7;
+	font-weight: 100;
+	letter-spacing:.45px;
+	line-height:1.5em;
+	padding-top:0.5em;
+
+}

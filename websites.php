@@ -68,13 +68,13 @@ include('inc/header.php'); ?>
 			<p>If you own a brick-and-mortar business and the bulk of your customers come from your local community, chances are you probably need a basic business website. You need a place for customers to find you, learn about your products or services, contact you and connect with you. Ideally, you already have some social media networks set up, and you get extra credit if you are already collecting your customer's email addresses using a signup form on your website! If you own a restaurant, you'd better have your menu on your website. You wouldn't believe how many carryout orders you're missing out on by not having your menu on your website.</p>
 			<h3>User Experience</h3>
 			<p>Now is the point when I explain a few of those key terms I just mentioned. The experience your customer has on your website is going to directly effect his or her buying behavior!</p>
-			
-			<!-- Button trigger modal -->
-			<a class="btn btn-primary btn-lg" data-toggle="modal" data-backdrop="true" data-keyboard="true" href="#myModal">
+		</div>
+	<!-- Button trigger modal -->
+			<button class="btn btn-primary btn-lg" data-toggle="modal" data-backdrop="true" data-keyboard="true" href="#myModal">
 			  Detailed Website Type Descriptions
-			</a>
-			<!-- Modal -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			</button>
+	<!-- Modal -->
+			<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -97,12 +97,11 @@ include('inc/header.php'); ?>
 			    </div>
 			  </div>
 			</div>
-
-		</div>
 		<div class="grid_8" id="cost">
 			<h2>Okay, how much does it all cost?</h2>
 				<p>This is going vary wildly from company to company.</p>
 		</div>
 	</div>
 </div>
+
 <?php include('inc/footer.php'); ?>

@@ -6,7 +6,7 @@
 	<title><?php echo $pageTitle; ?></title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/grid.css">
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/screen.css">
 </head>
 <body class="websites">
